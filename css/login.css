@@ -1,0 +1,115 @@
+:root{
+    --darkColor: #215a6d; 
+    --clearColor: #dfece6; 
+    --mediumColor: #92c7a3; 
+    --black: #2d2d29; 
+    --font: "Montserrat"
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    font-family: var(--font); 
+    background-color: var(--darkColor);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main__left{
+    width: 65%;
+    background-color: var(--clearColor);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    padding: 110px;
+    box-sizing: border-box;
+}
+
+.left__Tittle{
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.left__subtittle{
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.form__login {
+    width: 300px;
+    background-color: var(--clearColor);
+    height: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    margin-left: -170px; 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--darkColor); 
+
+}
+
+.form__tittle{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--darkColor);
+    font-size: 26px;
+    text-align: center;
+}
+
+.loginForm__text {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.loginForm__input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid var(--darkColor);
+    background-color: var(--clearColor);
+    border-radius: 10px;
+    color: var(--darkColor);
+}
+
+.loginForm__button {
+    padding: 10px;
+    background-color: var(--clearColor);
+    color: var(--darkColor);
+    border: 1px solid var(--darkColor); 
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.loginForm__button:hover {
+    background-color: var(--clearColor);
+    color: var(--darkColor);
+    transform: scale(1.05);
+}
+
+.loginForm__link {
+    color: var(--darkColor);
+    text-decoration: none;
+    margin-top: 20px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.loginForm__link:hover {
+    text-decoration: underline;
+}

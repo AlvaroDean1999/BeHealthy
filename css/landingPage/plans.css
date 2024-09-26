@@ -1,0 +1,175 @@
+:root {
+    --black: #2d2d29; 
+    --fondo: #dfece6; 
+    --blue: #215a6d;
+    --green: #92c7a3; 
+}
+
+.plansContainer{
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 10px;
+    margin-bottom: 10%;
+}
+
+.tittle__plansContainer{
+    margin-top: 12%;
+}
+
+.h1__tittle{
+    text-align: center;
+    color: var(--blue);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.plans__plansContainer{
+    margin-top: 5%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.basicPlan__plans,
+.premiumPlan__plans{
+    background-color: var(--green);
+    color: var(--black);
+    padding: 3%;
+    border-radius: 10px;
+    width: 33%;
+    height: 400px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); 
+}
+
+.estandarPlan__plans{
+    background-color: var(--blue);
+    color: var(--fondo);
+    padding: 3%;
+    border-radius: 10px;
+    width: 33%;
+    height: 450px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); 
+}
+
+.tittleContainer{
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.tittlePlan__tittleContainer{
+    font-size: 20px;
+    text-align: center;
+}
+
+.priceContainer{
+    width: 100%;
+    padding: 1% 0; 
+    margin-top: 15px;
+}
+
+.price__princeContainer{
+    font-size: 40px;
+    text-align: center;
+}
+
+.staticsContainer{
+    width: 100%;
+    height: auto;
+}
+
+.static__staticsContainer{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-top: solid rgb(207, 203, 203) 0.1px;   
+}
+
+.estandarPlan__plans p{
+    margin-bottom: 30px;
+}
+
+.buyButton{
+    width: 100%;
+}
+
+.buy__buyButton{
+    width: 80%;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10%;
+    font-size: 12px;
+}
+
+.buy__buyButton a{
+    color: black;
+    text-decoration: none;
+}
+
+.buy__buyButton:hover{
+    transform: scale(1.1);
+}
+
+.basicPlan__plans button,
+.premiumPlan__plans button{
+    color: var(--green);
+    background-color: var(--blue);
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.estandarPlan__plans button{
+    color: var(--blue);
+    background-color: var(--fondo);
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Nueva transición */
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Transición para cuando el elemento se muestra */
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body{
+        margin: 0 auto;
+    }
+
+    .plansContainer {
+        max-width: 90%;
+        align-items: center;
+    }
+
+    .plans__plansContainer {
+        flex-direction: column; /* Cambia la disposición de los planes a una columna */
+        align-items: stretch; /* Estira los elementos a lo ancho del contenedor */
+    }
+
+    .basicPlan__plans,
+    .premiumPlan__plans,
+    .estandarPlan__plans {
+        width: 100%; /* Hace que los planes ocupen todo el ancho */
+        margin-bottom: 20px; /* Agrega espacio entre los planes */
+    }
+
+}
+

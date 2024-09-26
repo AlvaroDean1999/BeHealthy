@@ -1,0 +1,64 @@
+:root {
+    --black: #2d2d29; 
+    --fondo: #dfece6; 
+    --blue: #215a6d;
+    --green: #92c7a3; 
+    --letra: "montserrat"; 
+  }
+
+
+
+.aboutUsTittle {
+    text-align: center;
+    margin-top: 5%;
+    color: var(--blue);
+    text-transform: uppercase;
+    margin-bottom: 7%;
+}
+
+.aboutUs {
+    margin-top: 3%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%; 
+}
+
+.aboutUsItem {
+    width: 90%; 
+    max-width: 300px; 
+    margin: 15px auto; 
+    opacity: 0;
+    transform: translateY(-50px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.aboutUsItem.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aboutUsLogo {
+    width: 20%; 
+    margin: 0 auto; 
+    margin-bottom: 4%;
+}
+
+.aboutUsItem p {
+    margin-top: 10px;
+}
+
+.itemTittleAboutUs {
+    margin-top: 20px; 
+    color: var(--blue);
+    margin-bottom: 4%;
+}
+
+/* Media query para pantallas medianas y grandes */
+@media screen and (min-width: 768px) {
+    .aboutUsItem {
+        width: 45%; 
+    }
+}

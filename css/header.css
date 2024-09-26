@@ -1,0 +1,119 @@
+:root{
+    --darkColor: #215a6d; 
+    --clearColor: #dfece6; 
+    --mediumColor: #92c7a3; 
+    --black: #2d2d29; 
+    --font: "Montserrat"
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+.vertical__menu {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--darkColor); 
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: left 1s ease; 
+    z-index: 1; 
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.userImg__menu{
+    width: 50px;
+    height: 50px;
+    background-color: var(--darkColor); 
+}
+
+
+.item__logo{
+    width: 25px;
+    height: 25px;
+    background-color: transparent; 
+}
+
+.close__menu{
+    display: flex;
+    justify-content: end;
+    background-color: var(--darkColor); 
+}
+
+.close__button{
+    font-size: 26px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none; 
+    color: var(--clearColor);
+    margin: 25px 20px;
+}
+
+.close__button:hover{
+    transform: scale(1.1);
+}
+
+.userData__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 20px; 
+    background-color: var(--darkColor); 
+}
+
+.userName__menu{
+    margin-left: 20px;
+    font-size: 16px;
+    opacity: 0.8;
+    background-color: transparent; 
+    color: var(--clearColor);
+}
+
+.item__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start; 
+    padding: 25px; 
+    background-color: var(--clearColor); 
+}
+
+.item__container:hover{
+    background-color: var(--mediumColor); 
+}
+
+.item__name{
+    margin-left: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: transparent; 
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu__button{
+    position: fixed;
+    margin: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.menu__button:hover{
+    transform: scale(1.1);
+}
+
+.imgMenu{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+

@@ -1,0 +1,136 @@
+:root{
+    --darkColor: #215a6d; 
+    --clearColor: #dfece6; 
+    --mediumColor: #92c7a3; 
+    --black: #2d2d29; 
+    --font: "Montserrat"
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container__a{
+    padding: 30px;
+    width: 40%;
+    background-color: var(--clearColor);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; 
+    box-sizing: border-box;
+}
+
+.tittle__a{
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.subtittle__a{
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+.text__a{
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.text__a a{
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+
+.followUp__container {
+    width: 60%;
+    background-color: var(--darkColor); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Estilos para el formulario de seguimiento */
+.followUp__form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.followUp__tittle{
+    color: var(--clearColor);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+/* Estilos para las etiquetas del formulario */
+.form__text {
+    font-weight: 400;
+    margin-bottom: 6px;
+    font-weight: italic;
+    text-align: center;
+    color: var(--clearColor);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/* Estilos para los campos de entrada del formulario */
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón del formulario */
+.form__button {
+    background-color: var(--clearColor);
+    color: var(--darkColor);
+    border: var(--clearColor);
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--darkColor);
+    text-transform: uppercase;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.form__button:hover {
+    transform: scale(1.1);
+}

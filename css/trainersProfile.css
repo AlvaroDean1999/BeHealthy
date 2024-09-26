@@ -1,0 +1,125 @@
+:root{
+    --darkColor: #215a6d; 
+    --clearColor: #dfece6; 
+    --mediumColor: #92c7a3; 
+    --black: #2d2d29; 
+    --font: "Montserrat"
+}
+
+
+
+body{
+    background-color: var(--clearColor);
+}
+
+.div__content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content__left{
+    background-color: var(--clearColor);
+    width: 40%;
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content__tittle {
+    text-align: center;
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.left__subtittle{
+    margin-top: 10%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+.content__right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkColor);
+    width: 70%;
+}
+
+.content__form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__rightZone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content__right1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.content__right2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__input{
+    width: 300px; 
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
+
+.form__text{
+    color: var(--clearColor);
+    font-weight: 400;
+}
+
+.form__userImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.form__fileinput{
+    width: 300px; 
+    padding: 10px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+}
+
+
+.form__save{
+    margin-top: 30px;
+    padding: 15px;
+    width: 30%;
+    border: 1px solid var(--clearColor); 
+    background-color: var(--darkColor);
+    color: var(--clearColor);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form__save:hover{
+    transform: scale(1.05);
+}
